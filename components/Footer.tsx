@@ -4,6 +4,8 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
+import Link from 'next/link';
+
 
 export default function Footer() {
   return (
@@ -23,24 +25,16 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4 ">Quick Links</h3>
           <ul className="space-y-2 text-white text-sm">
             <li>
-              <a href="/" className="hover:text-white">
-                Menu
-              </a>
+              <Link href="/">Menu</Link>
             </li>
             <li>
-              <a href="/" className="hover:text-white">
-                About Us
-              </a>
+              <Link href="about">About Us</Link>
             </li>
             <li>
-              <a href="/" className="hover:text-white">
-                Contact
-              </a>
+              <Link href="contact">Contact</Link>
             </li>
             <li>
-              <a href="/" className="hover:text-white">
-                Reservations
-              </a>
+              <Link href="reservations">Reservations</Link>
             </li>
           </ul>
         </div>
@@ -55,18 +49,18 @@ export default function Footer() {
             Email: sibandasandra617@gmail.com
           </p>
           <div className="flex space-x-4 mt-4">
-            <a href="/" className="text-white hover:text-white">
+            <Link href="/" className="text-white hover:text-white">
               <FaFacebookF />
-            </a>
-            <a href="/" className="text-white hover:text-white">
+            </Link>
+            <Link href="/" className="text-white hover:text-white">
               <FaInstagram />
-            </a>
-            <a href="/" className="text-white hover:text-white">
+            </Link>
+            <Link href="/" className="text-white hover:text-white">
               <FaTwitter />
-            </a>
-            <a href="/" className="text-white hover:text-white">
+            </Link>
+            <Link href="/" className="text-white hover:text-white">
               <FaWhatsapp />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

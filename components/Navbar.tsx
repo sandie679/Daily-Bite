@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaShoppingBag } from "react-icons/fa";
 import { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,8 @@ export default function Navbar() {
     <nav className="bg-green-950 shadow-md px-6 py-4 flex justify-between items-center h-20 relative">
       <div className="w-[60px] h-[60px]">
         <Link href="/">
-          <img src="/logo.png" alt="Logo" />
+          <Image src="/logo.png" alt="Logo" width={60} height={60} />
+
         </Link>
       </div>
 

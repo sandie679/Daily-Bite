@@ -32,7 +32,7 @@ export default function HomePage() {
           ABOUT US
         </h2>
         <p className="text-green-950 text-lg md:text-xl font-roboto mt-4 max-w-3xl leading-relaxed">
-          We're passionate about serving delicious, authentic Zimbabwean cuisine
+          We are passionate about serving delicious, authentic Zimbabwean cuisine
           that brings people together. Our story began with a love for different
           flavours and a desire to share them with the world.
         </p>

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { GiCookingPot } from "react-icons/gi";
 import { FaUtensils } from "react-icons/fa";
 import { MdDeliveryDining } from "react-icons/md";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -36,7 +37,7 @@ export default function AboutPage() {
               At Daily Bite Restaurant, we believe in more than just serving
               food we serve experiences. Our menu is crafted with love using the
               freshest local ingredients, blending traditional flavors with a
-              modern twist. Whether you're grabbing a quick lunch or enjoying a
+              modern twist. Whether you are grabbing a quick lunch or enjoying a
               cozy dinner, our warm atmosphere, exceptional service, and
               consistently delicious meals make every visit memorable.
             </p>
@@ -66,7 +67,7 @@ export default function AboutPage() {
                 </h4>
                 <p className="text-green-950 font-roboto">
                   We mix traditional cooking with modern flair to create unique
-                  dishes you won’t find anywhere else.
+                  dishes you will not find anywhere else.
                 </p>
               </div>
             </div>
@@ -80,7 +81,7 @@ export default function AboutPage() {
                   Fast, Fresh & Friendly
                 </h4>
                 <p className="text-green-950 font-roboto">
-                  Whether you're dining in or grabbing takeout, our team is
+                  Whether you are dining in or grabbing takeout, our team is
                   dedicated to giving you quick service, fresh meals, and a warm
                   smile every time you visit.
                 </p>
@@ -89,50 +90,52 @@ export default function AboutPage() {
           </div>
 
           <div className="lg:w-1/2 relative w-full">
-  
-  <div className="flex flex-col items-center gap-6 lg:hidden">
-    <img
-      className="w-full h-[300px] object-cover rounded-lg"
-      src="/eat.jpg"
-      alt=""
-    />
-    <video
-      className="w-full h-[300px] object-cover rounded-lg border-4 border-white shadow-lg"
-      src="/chick.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-    />
-  </div>
+            <div className="flex flex-col items-center gap-6 lg:hidden">
+              <Image
+                src="/eat.jpg"
+                alt=""
+                width={350}
+                height={150}
+                className="w-full h-[300px] object-cover rounded-lg"
+              />
 
-  
-  <div className="relative w-full h-full hidden lg:flex justify-center">
-    <div className="w-4/5 relative z-10">
-      <img
-        className="w-full h-[500px] object-cover rounded-lg"
-        src="/eat.jpg"
-        alt=""
-      />
-    </div>
+              <video
+                className="w-full h-[300px] object-cover rounded-lg border-4 border-white shadow-lg"
+                src="/chick.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            </div>
 
-    <div className="absolute top-40 left-[300px] w-3/5 z-20 border-4 border-white rounded-lg shadow-lg">
-      <video
-        className="w-full h-[400px] object-cover rounded-lg"
-        src="/chick.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
-    </div>
-  </div>
-</div>
+            <div className="relative w-full h-full hidden lg:flex justify-center">
+              <div className="w-4/5 relative z-10">
+                <Image
+                  src="/eat.jpg"
+                  alt=""
+                  width={350}
+                  height={150}
+                  className="  object-fill rounded-lg"
+                />
+              </div>
 
+              <div className="absolute top-40 left-[300px] w-3/5 z-20 border-4 border-white rounded-lg shadow-lg">
+                <video
+                  className="w-full h-[400px] object-cover rounded-lg"
+                  src="/chick.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="mt-10 md:mt-16">
+      <div className="mt-10 md:mt-28">
         <Footer />
       </div>
     </div>
