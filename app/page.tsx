@@ -5,12 +5,14 @@ import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
+
       <div
         className="w-full h-[560px] bg-cover bg-center relative"
         style={{ backgroundImage: "url('/banner.jpg')" }}
       >
-        <div className="absolute inset-0 bg-[#00000077] bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-[#00000077]"></div>
+
 
         <div className="flex flex-col items-center justify-center h-full text-white relative z-10 px-4 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-9xl font-playfair">
@@ -96,7 +98,7 @@ export default function HomePage() {
       </div>
 
       <div className="mt-20 min-h-[500px] px-4 bg-white">
-        <h2 className="text-3xl font-playfair font-semibold mb-6 ml-2 md:ml-4">
+        <h2 className="text-3xl font-playfair font-semibold mb-6 ml-2 md:ml-4 text-green-950">
           OUR SPECIALS
         </h2>
         
