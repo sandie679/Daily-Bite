@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="h-[200px]">
       <div
         className="w-full h-[560px] bg-cover bg-center relative"
         style={{ backgroundImage: "url('/banner.jpg')" }}
@@ -27,7 +27,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-start mt-20 mx-4 md:mx-10 bg-white">
+      <div className="flex flex-col items-start mt-20 mx-4 md:mx-10 ">
         <h2 className="text-green-950 text-4xl md:text-7xl font-semibold font-roboto">
           ABOUT US
         </h2>
@@ -99,9 +99,9 @@ export default function HomePage() {
         <h2 className="text-3xl font-playfair font-semibold mb-6 ml-2 md:ml-4">
           OUR SPECIALS
         </h2>
-        <div className="bg-white">
+       
         <CardSection />
-        </div>
+        
       </div>
   <div className="mt-10 md:mt-0">
       <Footer  />
