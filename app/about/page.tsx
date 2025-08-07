@@ -96,7 +96,8 @@ export default function AboutPage() {
                 alt=""
                 width={350}
                 height={150}
-                className="w-full h-[300px] object-cover rounded-lg"
+                className="
+                 object-fill rounded-lg"
               />
 
               <video
