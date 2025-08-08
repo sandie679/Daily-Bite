@@ -4,6 +4,7 @@ import { GiCookingPot } from "react-icons/gi";
 import { FaUtensils } from "react-icons/fa";
 import { MdDeliveryDining } from "react-icons/md";
 import Image from "next/image";
+import TeamSection from "@/components/team";
 
 export default function AboutPage() {
   return (
@@ -135,7 +136,9 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+      <TeamSection/>
 
+      
       <div className="mt-10 md:mt-28">
         <Footer />
       </div>
