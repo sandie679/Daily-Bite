@@ -32,11 +32,12 @@ export default function TeamSection() {
   return (
     <div className=" mt-32 px-4 text-center text-green-950">
       <h2 className="text-3xl font-bold mb-8 font-playfair">Meet Our Team</h2>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 gap-y-14 gap-x-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="bgwhite p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300    "
+            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 mx-2 sm:mx-0    "
           >
             <div className="relative w-32 h-32 mx-auto mb-4">
               <Image
