@@ -8,7 +8,7 @@ import TeamSection from "@/components/team";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <div
         className="w-full h-[560px] bg-cover bg-center relative"
         style={{ backgroundImage: "url(/meat.jpg)" }}
